@@ -69,7 +69,7 @@ pip install .
 ## 🚀 Usage
 
 ```python
-from colorMind import ColorMind
+from mycolormind import ColorMind
 
 cm = ColorMind()
 
