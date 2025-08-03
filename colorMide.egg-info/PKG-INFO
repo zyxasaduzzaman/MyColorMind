@@ -1,3 +1,28 @@
+Metadata-Version: 2.4
+Name: colorMide
+Version: 0.1.1
+Summary: A Python library for color theory, moods, and palettes
+Home-page: https://github.com/zyxasaduzzaman/MyColorMind
+Author: Asaduzzaman Asad
+Author-email: zyxmdasaduzzaman@gmail.com
+Project-URL: Bug Reports, https://github.com/zyxasaduzzaman/MyColorMind/issues
+Project-URL: Source, https://github.com/zyxasaduzzaman/MyColorMind
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: requires-python
+Dynamic: summary
+
 # 🎨 MyColorMind
 
 A comprehensive Python library that brings the power of **color theory**, **color moods**, and **palette generation** directly into your projects — helping developers, designers, and artists work with colors programmatically.
@@ -51,7 +76,7 @@ A comprehensive Python library that brings the power of **color theory**, **colo
 Install from PyPI (once published):
 
 ```bash
-pip install --index-url https://test.pypi.org/simple/ colorMind
+pip install --index-url https://test.pypi.org/simple/ colorMindAsad
 ```
 
 Or install from source:
