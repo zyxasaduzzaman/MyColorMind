@@ -51,7 +51,7 @@ A comprehensive Python library that brings the power of **color theory**, **colo
 Install from PyPI (once published):
 
 ```bash
-pip install colorMindAsad
+pip install --index-url https://test.pypi.org/simple/ colorMindAsad
 ```
 
 Or install from source:
