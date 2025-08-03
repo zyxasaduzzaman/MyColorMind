@@ -5,7 +5,7 @@ here = pathlib.Path(__file__).parent.resolve()
 long_description = (here / 'README.md').read_text(encoding='utf-8')
 
 setup(
-    name='colorMindAsad',
+    name='colorMide',
     version='0.1.1',
     description='A Python library for color theory, moods, and palettes',
     long_description=long_description,
