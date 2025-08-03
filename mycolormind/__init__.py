@@ -1,3 +1,3 @@
-from colorMind import ColorMind
+from .colorMind import ColorMind
 
-
+__all__ = ["ColorMind"]
