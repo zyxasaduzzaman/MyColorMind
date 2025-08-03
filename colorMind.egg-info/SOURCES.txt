@@ -1,0 +1,8 @@
+README.md
+setup.py
+colorMind.egg-info/PKG-INFO
+colorMind.egg-info/SOURCES.txt
+colorMind.egg-info/dependency_links.txt
+colorMind.egg-info/top_level.txt
+mycolormind/__init__.py
+mycolormind/colorMind.py
