@@ -1,0 +1,263 @@
+Metadata-Version: 2.4
+Name: colorMindAsad
+Version: 0.1.0
+Summary: A Python library for color theory, moods, and palettes
+Home-page: https://github.com/zyxasaduzzaman/MyColorMind
+Author: Asaduzzaman Asad
+Author-email: zyxmdasaduzzaman@gmail.com
+Project-URL: Bug Reports, https://github.com/zyxasaduzzaman/MyColorMind/issues
+Project-URL: Source, https://github.com/zyxasaduzzaman/MyColorMind
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Intended Audience :: Developers
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: classifier
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: requires-python
+Dynamic: summary
+
+# 🎨 MyColorMind
+
+A comprehensive Python library that brings the power of **color theory**, **color moods**, and **palette generation** directly into your projects — helping developers, designers, and artists work with colors programmatically.
+
+---
+
+## 📑 Table of Contents
+
+* [📘 Background](#-background)
+* [✨ Features](#-features)
+* [⚙️ Installation](#️-installation)
+* [🚀 Usage](#-usage)
+* [🧰 Available Methods](#-available-methods)
+* [📎 Examples](#-examples)
+* [📦 Dependencies](#-dependencies)
+* [🖥️ System Requirements](#️-system-requirements)
+* [🎨 Color Theory Basics](#-color-theory-basics)
+* [🤝 Contributing](#-contributing)
+* [🛣️ Roadmap](#️-roadmap)
+* [🐞 Bug Reporting & Support](#-bug-reporting--support)
+* [🧾 License](#-license)
+* [👤 Author](#-author)
+* [🙏 Acknowledgements](#-acknowledgements)
+* [❓ FAQ](#-faq)
+* [📬 Contact](#-contact)
+
+---
+
+## 📘 Background
+
+**MyColorMind** is built to simplify working with colors in Python. It combines classical color theory and psychological color meanings to empower artists, UI/UX designers, and developers with tools for generating beautiful and meaningful color palettes.
+
+---
+
+## ✨ Features
+
+✅ Primary, Secondary, Tertiary color retrieval
+✅ Color wheel with relation functions: Complementary, Analogous, Triadic
+✅ Color mood-based palette suggestions (e.g., Happy, Calm)
+✅ Add custom mood palettes
+✅ Warm vs Cool color check
+✅ Psychological color meanings
+✅ HEX code for all known colors
+✅ Introspective method listing with `availableMethods()`
+✅ Fully object-oriented and extendable
+
+---
+
+## ⚙️ Installation
+
+Install from PyPI (once published):
+
+```bash
+pip install --index-url https://test.pypi.org/simple/ colorMindAsad
+```
+
+Or install from source:
+
+```bash
+git clone https://github.com/zyxasaduzzaman/MyColorMind.git
+cd MyColorMind
+pip install .
+```
+
+✅ Python 3.6 or higher is required.
+
+---
+
+## 🚀 Usage
+
+```python
+from colorMind import ColorMind
+
+cm = ColorMind()
+
+print(cm.primaryColor())
+print(cm.suggestComplement("red"))
+print(cm.generatePaletteByMood("happy"))
+```
+
+---
+
+## 🧰 Available Methods
+
+| Method                         | Description                                                 |
+| ------------------------------ | ----------------------------------------------------------- |
+| `primaryColor(index=None)`     | Get all or specific primary colors                          |
+| `secondaryColor(index=None)`   | Get all or specific secondary colors                        |
+| `tertiaryColor(index=None)`    | Get all or specific tertiary colors                         |
+| `allColor()`                   | Returns all colors in color wheel                           |
+| `relation(rel=None)`           | Returns color relations (complementary, analogous, triadic) |
+| `colorMeaning(color)`          | Returns psychological meaning of color                      |
+| `isWarmColor(color)`           | Checks if a color is warm                                   |
+| `isCoolColor(color)`           | Checks if a color is cool                                   |
+| `colorGroup(color)`            | Returns the group type (Primary, Secondary, Tertiary)       |
+| `suggestComplement(color)`     | Returns complementary color                                 |
+| `suggestAnalogous(color)`      | Returns analogous colors                                    |
+| `suggestTriadic(color)`        | Returns triadic colors                                      |
+| `generatePaletteByMood(mood)`  | Suggests color palette based on mood                        |
+| `addMoodPalette(mood, colors)` | Add or update a mood palette                                |
+| `hexValue(color)`              | Returns HEX color code                                      |
+| `availableMethods()`           | Lists all public methods                                    |
+| `help()`                       | Returns method descriptions dictionary                      |
+
+---
+
+## 📎 Examples
+
+### ✅ Get Primary Colors
+
+```python
+print(cm.primaryColor())  
+# ['red', 'yellow', 'blue']
+```
+
+### 🎯 Find Complementary Color
+
+```python
+print(cm.suggestComplement('red'))  
+# 'green'
+```
+
+### 🌈 Mood-Based Palette
+
+```python
+print(cm.generatePaletteByMood('happy'))  
+# ['yellow', 'pink', 'orange']
+```
+
+### 🆕 Add Custom Mood Palette
+
+```python
+cm.addMoodPalette('motivated', ['red', 'orange', 'gold'])
+```
+
+### 🎨 HEX Code
+
+```python
+print(cm.hexValue('violet'))  
+# '#8F00FF'
+```
+
+---
+
+## 📦 Dependencies
+
+* Pure Python
+* No external packages
+* Compatible with all systems with Python 3.6+
+
+---
+
+## 🖥️ System Requirements
+
+* Python 3.6+
+* OS: Windows / Linux / macOS
+
+---
+
+## 🎨 Color Theory Basics
+
+* **Primary Colors**: Red, Yellow, Blue
+* **Secondary Colors**: Orange, Green, Violet
+* **Tertiary Colors**: Yellow-Orange, Red-Violet, etc.
+* **Complementary**: Opposites on color wheel (e.g., red & green)
+* **Analogous**: Next to each other (e.g., blue, blue-green, green)
+* **Triadic**: Evenly spaced (e.g., red, yellow, blue)
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! 🛠️
+Steps:
+
+1. Fork the repository
+2. Make changes
+3. Submit a pull request ✅
+
+Follow consistent coding style and add docstrings where necessary.
+
+---
+
+## 🛣️ Roadmap
+
+* ✅ Initial CLI-ready release
+* 🔜 Add split-complementary, tetradic relations
+* 🔜 GUI-based palette visualizer
+* 🔜 Unit tests
+* 🔜 PyPi full release
+
+---
+
+## 🐞 Bug Reporting & Support
+
+* Open issues at: [GitHub Issues](https://github.com/zyxasaduzzaman/MyColorMind/issues)
+* Email support: `zyxmdasaduzzaman@gmail.com`
+
+---
+
+## 🧾 License
+
+🚫 No license yet. For commercial or personal usage, contact the author.
+
+---
+
+## 👤 Author
+
+**Asaduzzaman Asad**
+📧 Email: [zyxmdasaduzzaman@gmail.com](mailto:zyxmdasaduzzaman@gmail.com)
+🌐 GitHub: [zyxasaduzzaman](https://github.com/zyxasaduzzaman)
+
+---
+
+## 🙏 Acknowledgements
+
+Thanks to the Python community and open-source projects for inspiration. 🎉
+
+---
+
+## ❓ FAQ
+
+**Q: Can I use this commercially?**
+A: Contact the author for permission.
+
+**Q: Is it compatible with Python 2?**
+A: No. Python 3.6+ only.
+
+**Q: Can I add my own palettes?**
+A: Yes. Use `addMoodPalette()` or contribute via PR.
+
+---
+
+## 📬 Contact
+
+Feel free to reach out:
+📧 Email: [zyxmdasaduzzaman@gmail.com](mailto:zyxmdasaduzzaman@gmail.com)
+🔗 GitHub: [zyxasaduzzaman](https://github.com/zyxasaduzzaman)
